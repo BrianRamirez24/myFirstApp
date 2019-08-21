@@ -1,0 +1,69 @@
+<html>
+    <head>  
+        <link rel = "stylesheet" type="text/css" href = "miEstilo.css">
+        <script language = "JavaScript" src= "index.js">
+        </script>
+
+    </head>
+    <body>
+        <div>
+            <p>hola mundo</p>
+            <br>
+                    <fieldset>
+                        <legend class="misTitulos">
+                            <h1 class="misTitulos">datos personales</h1>
+                        </legend>
+
+                        <form>
+                                
+                                <input type = "text"
+                                       placeholder = "ingrese su nombre"
+                                       id = "txtNombre">
+                                       <br/>
+                                
+                                <input type  = "number"
+                                       id    = "edad"
+                                       min   = "1"
+                                       onkeydown = "return false"
+                                       max   = "100"
+                                       placeholder = "ingrese su edad"/>
+                                
+                                    <br />
+                                    
+                                 <label>
+                                <input type = "radio"
+                                       name = "validarVeg"
+                                       id = "veg"
+                                       value = "vegetariano"/> 
+                                    vegetariano
+                                    </label>
+                                  
+                                 <label>
+                                    <input type = "radio"
+                                       name = "validarVeg"
+                                       id = "noveg"
+                                       value="no vegetariano"/>  
+                                       no vegetariano
+                                    </label>  
+
+                                    <br />
+                                    
+                                <input type = "button" 
+                                       onclick = "validarEdad()" 
+                                       value = "validar edad"/>
+                                    
+                                       <br />
+
+                             
+
+                                <input type = "button" 
+                                       onclick = "return numerosAleatorios()" 
+                                       value="numeros aleatorios">
+
+                            </form>
+                      
+                    </fieldset>
+        </div>
+        
+    </body>
+</html>
